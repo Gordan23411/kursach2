@@ -1,0 +1,42 @@
+D:\Projects\TouristCompany\bin\x86\Debug\DB.accdb
+D:\Projects\TouristCompany\bin\x86\Debug\TouristCompany.exe.config
+D:\Projects\TouristCompany\bin\x86\Debug\TouristCompany.exe
+D:\Projects\TouristCompany\bin\x86\Debug\TouristCompany.pdb
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.MainForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.Properties.Resources.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.WinForms.AddEditHotelForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.WinForms.AddEditTourForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.WinForms.AddeditTouristForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.WinForms.AddEditTravelForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.WinForms.EmployeeForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.WinForms.HotelsForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.WinForms.LoginForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.WinForms.ServiceForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.WinForms.TouristForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.WinForms.ToursForm.resources
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.csproj.GenerateResource.cache
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.csproj.CoreCompileInputs.cache
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.exe
+D:\Projects\TouristCompany\obj\x86\Debug\TouristCompany.pdb
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\bin\x86\Debug\DBTour.mdf
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\bin\x86\Debug\DBTour_log.ldf
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\bin\x86\Debug\TouristCompany.exe.config
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\bin\x86\Debug\TouristCompany.exe
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\bin\x86\Debug\TouristCompany.pdb
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.csproj.AssemblyReference.cache
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.MainForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.Properties.Resources.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.WinForms.AddEditHotelForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.WinForms.AddEditTourForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.WinForms.AddeditTouristForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.WinForms.AddEditTravelForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.WinForms.EmployeeForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.WinForms.HotelsForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.WinForms.LoginForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.WinForms.ServiceForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.WinForms.TouristForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.WinForms.ToursForm.resources
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.csproj.GenerateResource.cache
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.csproj.CoreCompileInputs.cache
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.exe
+C:\Users\Andrey\Desktop\Unlearn\Задачи на продажу\ТурФирма\TouristCompanySQL\obj\x86\Debug\TouristCompany.pdb
