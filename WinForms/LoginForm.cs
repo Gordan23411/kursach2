@@ -16,11 +16,12 @@ namespace TouristCompany.WinForms
         public LoginForm()
         {
             InitializeComponent();
-            empl_cmbx.DataSource = GetEmployees(); //связываем нашу колекцию сотрудников с комбоксом для выбора
+            empl_cmbx.DataSource = GetEmployees(); //связь сотрудников с окном для выбора сот
         }
 
-     
-        public static List<Employee> GetEmployees() //вовзращаем колекцию сотрудников
+
+
+        public static List<Employee> GetEmployees() //возвращ к окну выб сот
         {
             AgentTableAdapter employeeTable = new AgentTableAdapter();
 

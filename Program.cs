@@ -10,9 +10,9 @@ namespace TouristCompany
 {
     static class Program
     {
-        /// <summary>
-        /// Главная точка входа для приложения.
-        /// </summary>
+
+        /// Глав точка входа
+
         [STAThread]
         static void Main()
         {

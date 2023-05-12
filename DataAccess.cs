@@ -12,7 +12,7 @@ namespace TouristCompany
 	{
 		public static Employee CurrentEmployee { get; set; }
 
-		//начинает читать базу
+		//начало чтен базы дан
 		static DataAccess()
 		{
             employeeAdap = new AgentTableAdapter();
@@ -33,7 +33,7 @@ namespace TouristCompany
 			travelAdap.Fill(travelTable);
 		}
 
-        // тут обновляется список туристов
+        // обнов спис туристов
         public static int UpdateTourist(Tourist currentTourist)
         {
             int result = touristAdap.UpdateQuery(currentTourist.FName, currentTourist.LName, currentTourist.PassportData, currentTourist.Phone, currentTourist.Email, currentTourist.ID_Tourist);
@@ -48,7 +48,7 @@ namespace TouristCompany
             serviceAdap.Fill(serviceTable);
         }
 
-		// тут добавляется турист
+		// добав туристов
 		public static int InsertTourist(string fname, string lname, string passport, string phone, string email)
 		{
 			int result = touristAdap.Insert(fname, lname, passport, phone, email);
@@ -56,34 +56,34 @@ namespace TouristCompany
 			return result;
 		}
 
-		// тут добавляется сервис
+		// добав серовиса
 		public static void InsertService(Service service)
 		{
 			serviceAdap.Insert(service.Title);
 			serviceAdap.Fill(DataAccess.serviceTable);
 		}
 
-		// тут обновляется путишествие 
+		// обнов путиш
 		public static void UpdateTravel(Travel travel)
         {
             travelAdap.UpdateQuery(travel.Tour.tour_id, travel.Fare, travel.CostTour, travel.DiscountedPrice, travel.DateOfIssue, DataAccess.CurrentEmployee.ID_Employee, travel.Tourist_.ID_Tourist, travel.id_travel);
             travelAdap.Fill(travelTable);
         }
 
-        // удалить путешествие
+        // del путиш
         public static void DeleteTravel(Travel travel)
         {
             travelAdap.DeleteQuery(travel.id_travel);
         }
 
-        // тут удалить тур
+        // del тур
         public static void DeleteTour(Tour tour)
         {
             tourAdap.DeleteQuery(tour.tour_id);
             tourAdap.Fill(tourTable);
         }
 
-        // тута выводится список туристов
+        // вывод спис турист
         public static List<Tourist> GetTourists(string name, string email, string phone)
 		{
 			
@@ -110,35 +110,35 @@ namespace TouristCompany
 			return source.ToList<Tourist>();
 		}
 
-		//добавляем страну
+		//add страна
 		public static void InsertCountry(string nameCountry)
 		{
 			countryAdapt.Insert(nameCountry);
 			countryAdapt.Fill(countryTable);
 		}
 
-		//добавляем путешествие
+		//add путиш
 		public static void InsertTravel(Travel travel)
         {
             travelAdap.Insert(travel.Tour.tour_id, travel.Fare, travel.CostTour, travel.DiscountedPrice, travel.DateOfIssue, DataAccess.CurrentEmployee.ID_Employee, travel.Tourist_.ID_Tourist);
             travelAdap.Fill(travelTable);
         }
 
-        // добавляем тур
+        //add тур
         public static void AddTour(Tour tour)
         {
             tourAdap.Insert(tour.TourName, tour._Country.country_id, tour.Information, tour._Hotel.id_hotel, tour.DateBegin, tour.DateEnd, tour.Price, tour.Seats);
             tourAdap.Fill(tourTable);
         }
 
-        // обновляем тур
+        //обнов тура
         public static void UpdateTour(Tour tour)
         {
             tourAdap.UpdateQuery(tour.TourName, tour._Country.country_id, tour.Information, tour._Hotel.id_hotel, tour.DateBegin, tour.DateEnd, tour.Price, tour.Seats, tour.tour_id);
             tourAdap.Fill(tourTable);
         }
 
-        // удаляем сервис
+        // del сервис
         public static void DeleteServcie(Service service)
         {
             serviceAdap.DeleteQuery(service.id_service);
@@ -146,14 +146,14 @@ namespace TouristCompany
             hsAdap.Fill(hsTable);
         }
 
-        // удаляем туриста
+        //del туриста
         public static void DeleteTourist(Tourist tourist)
         {
             touristAdap.DeleteQuery(tourist.ID_Tourist);
             touristAdap.Fill(touristTable);
         }
 
-        // получаем список сотрудников
+        //выводит спис сотруд
         public static List<Employee> GetEmployees()
 		{
 			var rr = (from x in employeeTable
@@ -170,7 +170,7 @@ namespace TouristCompany
 			return rr;
 		}
 
-		// добвляем сотрудника
+		//add сотруд
 		public static int InsertEmployee(string FName, string LName, string Passport, string Phone, string Email)
 		{
 			int result = employeeAdap.Insert(FName, LName, Passport, Phone, Email);
@@ -178,7 +178,7 @@ namespace TouristCompany
 			return result;
 		}
 
-		//получаем список отелей
+		//спис отел
 		public static List<Hotel> GetHotels()
 		{
 			return hotelTable.Select(delegate (DBTourDataSet.HotelRow x)
@@ -204,7 +204,7 @@ namespace TouristCompany
 			}).ToList<Hotel>();
 		}
 
-        //вносим исправление в данные отеля
+        //измен дан отелей
         public static int UpdateHotel(Hotel currentHotel)
         {
             int result = hotelAdap.UpdateQuery(currentHotel.Name, currentHotel._Country.country_id, currentHotel.City, currentHotel.Rating, currentHotel.Information, currentHotel.id_hotel);
@@ -212,14 +212,14 @@ namespace TouristCompany
             return result;
         }
 
-        // удаляем отель
+        //del отелей
         public static void DeleteHotel(Hotel hotel)
         {
             hotelAdap.DeleteQuery(hotel.id_hotel);
             hotelAdap.Fill(DataAccess.hotelTable);
         }
 
-        // добовляем сервис отеля
+        //add сервис для отел
         public static void UpdateHotelService(Hotel hotel)
         {
             hsAdap.DeleteQuery(hotel.id_hotel);
@@ -230,7 +230,7 @@ namespace TouristCompany
             hsAdap.Fill(hsTable);
         }
 
-        // поиск по списку отелей
+        //список для поис отел
         public static List<Hotel> GetHotels(string name, Country country, string city, string service)
 		{
 			IEnumerable<Hotel> source = GetHotels();
@@ -258,7 +258,7 @@ namespace TouristCompany
 			return source.ToList<Hotel>();
 		}
 
-        // вставляем данне отеля
+        //встав дан отля
         public static int InsertHotel(Hotel newHotel)
         {
             int result = hotelAdap.InsertQuery(newHotel.Name, newHotel._Country.country_id, newHotel.City, newHotel.Rating, newHotel.Information);
@@ -282,7 +282,7 @@ namespace TouristCompany
             return result;
         }
 
-        // создаем список стран
+        //список стран соз
         public static List<Country> GetCountry()
 		{
 			return (from x in countryTable
@@ -293,7 +293,7 @@ namespace TouristCompany
 					}).ToList<Country>();
 		}
 
-		// создаем список сервисов в отелях
+		//соз список сервис в отел
 		public static List<Service> GetServices()
 		{
 			return (from x in serviceTable
@@ -304,7 +304,7 @@ namespace TouristCompany
 					}).ToList<Service>();
 		}
 
-		// создаем список туристов
+		//соз список туристов
 		public static List<Tourist> GetTourists()
 		{
 			return (from x in touristTable
@@ -319,7 +319,7 @@ namespace TouristCompany
 					}).ToList<Tourist>();
 		}
 
-		//создаем список туров
+		//соз спис туров
 		public static List<Tour> GetTours()
 		{
 			return tourTable.Select(delegate (DBTourDataSet.TourRow x)
@@ -359,7 +359,7 @@ namespace TouristCompany
 			}).ToList<Tour>();
 		}
 
-		//поиск по туру и его критериям, выборка в список сходств
+		//поиск по туру по сходству выбраное в спис
 		public static List<Tour> GetTours(string name, Country country, decimal price, DateTime dateBegin)
 		{
 			IEnumerable<Tour> source = GetTours();
@@ -384,7 +384,7 @@ namespace TouristCompany
 			return source.Select(x => x).Where(x => x.DateBegin >= dateBegin).ToList();
 		}
 
-		//соз списка путешествий
+		//спис путиш
 		public static List<Travel> GetTravels()
 		{
 			return travelTable.Select(delegate (DBTourDataSet.TravelRow x)
@@ -449,7 +449,7 @@ namespace TouristCompany
 			}).ToList<Travel>();
 		}
 
-		//все таблицы и их адаптеры
+		//таблицы + адап
 		
 		private static DBTourDataSet dset = new DBTourDataSet();
 
